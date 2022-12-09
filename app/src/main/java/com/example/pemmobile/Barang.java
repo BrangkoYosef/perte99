@@ -15,6 +15,7 @@ import com.example.pemmobile.Model.m_barang;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Barang extends AppCompatActivity {
     RecyclerView lvBarang;
@@ -46,6 +47,7 @@ public class Barang extends AppCompatActivity {
                                 //Log.d(TAG, document.getId() + "00" + document.getData());
                           data.add(new m_barang (
                                   document.getId().toString,
+                                  Objects.requireNonNull(document.get)
                                   document.getData().get("nama barang").toString(),
                                   R.drawable.ic_bike,
                                   document.getData().get("harga").toString(),
@@ -53,7 +55,7 @@ public class Barang extends AppCompatActivity {
                           )
                            }
                         } else {
-                            Log.w(TAG, "Error getting documents.", task.getException());
+                            //Log.w(TAG, "Error getting documents.", task.getException());
                         }
                     }
                 });
