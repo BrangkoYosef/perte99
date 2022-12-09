@@ -36,7 +36,7 @@ public class Barang extends AppCompatActivity {
     public void dataBarang(){
 
         data = new ArrayList<>();
-        db.collection(collectionPath:"barang")
+        db.collection("barang")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -80,6 +80,5 @@ public class Barang extends AppCompatActivity {
 //        llm.setOrientation(LinearLayoutManager.VERTICAL);
 //        lvBarang.setLayoutManager(llm);
  //       lvBarang.setAdapter(adp);
-    }
 
-}
+
