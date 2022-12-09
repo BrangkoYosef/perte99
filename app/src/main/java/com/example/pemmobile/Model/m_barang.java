@@ -15,6 +15,18 @@ public class m_barang {
         this.satuan = satuan;
     }
 
+    public String getId_barang() {
+        return id_barang;
+    }
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public String getSatuan() {
+        return satuan;
+    }
+
     public m_barang(String nama_barang, int img) {
         this.nama_barang = nama_barang;
         this.img = img;
