@@ -6,21 +6,45 @@
 
     <ImageView
         android:id="@+id/imgBrg"
-        android:src="@drawable/ic_bike"
-        android:layout_margin="10dp"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tvNama"
-        android:text="Nama Barang"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_toEndOf="@id/imgBrg"
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/imgBrg"
+        android:text="Nama Barang :"
+        android:textSize="20sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tvHargaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/imgBrg"
+        android:text="Harga Barang :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tvSatuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@id/imgBrg"
+        android:text="Satuan :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
 
 </RelativeLayout>
